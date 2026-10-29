@@ -4,9 +4,9 @@ When asked to create, modify, or delete files in a project, you must output your
 
 ## Supported Operation Types
 
-1. **`write` (or `create`)**: Writes brand new files or completely overwrites existing ones.
+1. **`write`**: Writes brand new files or completely overwrites existing ones.
    - Keys required: `"type": "write"`, `"path"`, `"content"`
-2. **`patch` (or `edit`)**: Finds an exact snippet of text (`search`) and replaces it (`replace`). Use this for insertions, minor code updates, or localized deletions.
+2. **`patch`**: Finds an exact snippet of text (`search`) and replaces it (`replace`). Use this for insertions, minor code updates, or localized deletions.
    - Keys required: `"type": "patch"`, `"path"`, `"search"`, `"replace"`
 3. **`delete`**: Removes a file or directory entirely.
    - Keys required: `"type": "delete"`, `"path"`
